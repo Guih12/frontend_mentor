@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-primary: 'Overpass';
+    --white: #ffffff;
+    --light-grey: #959eac;
+    --medium-grey: #7c7c7c;
+    --dark-blue: #252d37;
+    --very-dark-blue: #121417;
+    --orange: #fb7413;
+
+    --desktop: 1440px;
+    --mobile: 375px;
+    --height-max: 100vh;
+
+    --paragraph: 15px;
+
+    --button-point-width: 40px;
+    --button-point-heigth: 40px;
+
+}
+.container{
+    width: 100%;
+    height: var(--height-max);
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: var(--very-dark-blue);
+}
+
+.card{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 25px;
+    border-radius: 20px;
+
+    background: var(--dark-blue);
+}
+   
+.information img{
+    width: 20px;
+}
+
+.information .icon{
+    width: var(--button-point-width);
+    height: var(--button-point-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--medium-grey);
+}
+
+.information h1{
+
+    font-family: 'Overpass';
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    color: var(--white)
+}
+
+.information span{
+    font-family: 'Overpass';
+    font-size: var(--paragraph);
+    color: var(--light-grey);
+
+}
+
+.card .points-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .points-group .point{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: var(--button-point-width);
+    height: var(--button-point-heigth);
+
+    border-radius: 50%;
+    background: var(--medium-grey);
+    text-decoration: none;
+
+    font-family: 'Overpass';
+
+
+    color: var(--very-dark-blue);
+}
+
+.card .points-group .point:hover{
+    background: var(--orange);
+}
+
+
+.btn-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-submit{
+    width: 100%;
+
+    padding: 15px;
+
+    color: var(--white);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    
+    font-family: 'Overpass';
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    background: var(--orange);
+}
+
+.btn-submit:hover{
+    opacity: 90%;
+}
+
+
+.information .image img{
+    width: 200px;
+}
